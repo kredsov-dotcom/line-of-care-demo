@@ -23,6 +23,8 @@
 .team-card h3{margin:0 0 5px}.team-card p{margin:0;font-size:.93rem;line-height:1.4}
 .team-card p+p{margin-top:7px}.gallery-grid figcaption{line-height:1.3;font-weight:600}
 .patient-guides .cards{align-items:start}
+.location-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:760px){.location-cards{grid-template-columns:1fr}}
 @media(min-width:850px){.team-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:400px){.team-grid,.gallery-grid{gap:10px}.team-card div,.gallery-grid figcaption{padding:10px}}
 </style>
@@ -31,7 +33,7 @@
 <header class="header">
   <div class="wrap nav">
     <a class="brand" href="#" aria-label="Клиника Эмиля Ланского, главная"><span class="mark" aria-hidden="true"></span><span><strong>Эмиль Ланской</strong><small>Клиника маммологии</small></span></a>
-    <nav aria-label="Разделы сайта"><a href="#team">Команда</a><a href="#services">Услуги</a><a href="#visit">Как проходит приём</a></nav>
+    <nav aria-label="Разделы сайта"><a href="#team">Команда</a><a href="#services">Услуги</a><a href="#visit">Как проходит приём</a><a href="#location">Локации</a></nav>
     <button class="button" type="button" data-book>Записаться</button>
   </div>
 </header>
@@ -123,6 +125,13 @@
       <div><details><summary>Что взять с собой на консультацию?</summary><p>Если у вас есть результаты предыдущих обследований, возьмите заключения и сами снимки. Можно заранее записать вопросы, которые вы хотите задать врачу.</p></details>
       <details><summary>Можно ли прийти за вторым мнением?</summary><p>Да. Выберите «Второе мнение» при записи. Возьмите заключения, снимки и рекомендации, которые хотите обсудить.</p></details>
       <details><summary>Можно ли прийти с близким человеком?</summary><p>Можно прийти вместе и обсудить с врачом, на какой части консультации вам хотелось бы присутствия близкого человека.</p></details></div>
+    </div>
+  </section>
+  <section class="section wrap" id="location" aria-labelledby="location-title">
+    <div class="section-head"><div><span class="kicker">Локации для демо</span><h2 id="location-title">Клиника и стационар</h2></div></div>
+    <div class="cards location-cards">
+      <article class="card"><h3>Городская клиника</h3><p>Москва, Романов переулок, 4 · деловой квартал «Романов Двор»</p><p>Консультации, диагностика и амбулаторное наблюдение.</p><a class="textlink" href="https://yandex.ru/maps/213/moscow/?text=Москва%2C%20Романов%20переулок%2C%204" target="_blank" rel="noopener">Здание на карте ↗</a></article>
+      <article class="card"><h3>Загородный стационар</h3><p>Московская область, Одинцовский округ, Барвиха</p><p>Плановые операции, восстановление и наблюдение после операции.</p></article>
     </div>
   </section>
 </main>
